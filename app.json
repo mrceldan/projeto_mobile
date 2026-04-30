@@ -1,0 +1,24 @@
+{
+  "expo": {
+    "name": "Dezlumbrante",
+    "slug": "dezlumbrante",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#E91E8C"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": false
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E91E8C"
+      }
+    }
+  }
+}
