@@ -266,6 +266,50 @@ npx expo start -c
 }
 ```
 
+### 🔄 Validação de Token (GET /api/auth/validar)
+
+```json
+{
+  "usuario": {
+    "id": 1,
+    "nome": "Administrador",
+    "email": "admin@dezlumbrante.com",
+    "tipo": "admin"
+  }
+}
+```
+
+### 🔄 Sincronização (GET /api/sync/all-data)
+
+```json
+{
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "Base Líquida Matte",
+      "categoria": "Pele",
+      "preco": 59.9,
+      "descricao": "Alta cobertura",
+      "imagem": null,
+      "quantidade": 20,
+      "created_at": "2026-04-30 10:00:00",
+      "updated_at": "2026-04-30 10:00:00"
+    }
+  ],
+  "categorias": [
+    {
+      "id": 1,
+      "nome": "Boca",
+      "descricao": "Produtos para os lábios",
+      "cor": "#E91E8C",
+      "icone": "💄",
+      "created_at": "2026-04-30 10:00:00"
+    }
+  ]
+}
+```
+
+
 ---
 
 ## 📈 Uso para Dashboard
