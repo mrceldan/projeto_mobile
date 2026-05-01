@@ -38,7 +38,7 @@ Dezlumbrante é um aplicativo mobile completo de e-commerce de maquiagem, desenv
 
 ## 🏗️ Arquitetura do Projeto
 
-```bash id="estrutura"
+```bash
 dezlumbrante/
 ├── backend/
 │   ├── controllers/
@@ -92,14 +92,14 @@ dezlumbrante/
 
 ### 🔹 Clone o repositório
 
-```bash id="clone"
+```bash
 git clone https://github.com/rangelisa/projeto_mobile.git
 cd projeto_mobile
 ```
 
 ### 🔹 Instale dependências
 
-```bash id="instalar"
+```bash
 npm install
 cd backend
 npm install
@@ -108,20 +108,20 @@ cd ..
 
 ### 🔹 Configure o backend
 
-```js id="config"
+```js
 const SEU_BACKEND_URL = 'http://SEU_IP:3000/api';
 ```
 
 ### 🔹 Execute o backend
 
-```bash id="backend"
+```bash
 cd backend
 npm run dev
 ```
 
 ### 🔹 Execute o app
 
-```bash id="app"
+```bash
 npx expo start -c
 ```
 
@@ -187,9 +187,13 @@ npx expo start -c
 
 ## 📊 Geração de Dados em JSON
 
+Os dados abaixo representam os retornos reais da API e foram estruturados para permitir análises e construção de dashboards.
+
+---
+
 ### 📦 Produtos
 
-```json id="prod_json"
+```json
 {
   "success": true,
   "data": [
@@ -209,9 +213,11 @@ npx expo start -c
 }
 ```
 
+---
+
 ### 🗂️ Categorias
 
-```json id="cat_json"
+```json
 [
   {
     "id": 1,
@@ -224,9 +230,11 @@ npx expo start -c
 ]
 ```
 
+---
+
 ### 🧾 Vendas / Pedidos
 
-```json id="vendas_json"
+```json
 [
   {
     "id": 1,
@@ -251,9 +259,11 @@ npx expo start -c
 ]
 ```
 
-### 👤 Autenticação
+---
 
-```json id="auth_json"
+### 👤 Autenticação (POST /api/auth/login)
+
+```json
 {
   "usuario": {
     "id": 1,
@@ -265,6 +275,8 @@ npx expo start -c
   "expira_em": "2026-05-07T10:00:00.000Z"
 }
 ```
+
+---
 
 ### 🔄 Validação de Token (GET /api/auth/validar)
 
@@ -278,6 +290,8 @@ npx expo start -c
   }
 }
 ```
+
+---
 
 ### 🔄 Sincronização (GET /api/sync/all-data)
 
@@ -308,7 +322,6 @@ npx expo start -c
   ]
 }
 ```
-
 
 ---
 
@@ -343,7 +356,7 @@ npx expo start -c
 
 ### Frontend
 
-```bash id="scripts_front"
+```bash
 npm start
 npm run android
 npm run ios
@@ -352,8 +365,12 @@ npm run web
 
 ### Backend
 
-```bash id="scripts_back"
+```bash
 cd backend
 npm run dev
 npm start
 ```
+
+---
+
+
